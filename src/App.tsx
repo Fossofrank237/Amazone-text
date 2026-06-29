@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_URL = "https://k4ujrcupa8.execute-api.us-east-1.amazonaws.com";
+const API_URL = "https://k4ujrcupa8.execute-api.us-east-1.amazonaws.com/dev";
 
 function App() {
   const [messages, setMessages] = useState<any[]>([]);
