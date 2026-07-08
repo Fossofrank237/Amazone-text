@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 
 const COGNITO_DOMAIN = "https://us-east-1tpmt1ec3o.auth.us-east-1.amazoncognito.com";
 const CLIENT_ID = "4ulgo15t8o7di360fkqbvakp1i";
-const REDIRECT_URI = "http://localhost:5173";
+const REDIRECT_URI = window.location.hostname === "localhost" 
+  ? "http://localhost:5173"
+  : "https://main.d2o8nxbqumoodt.amplifyapp.com";
 const API_URL = "https://k4ujrcupa8.execute-api.us-east-1.amazonaws.com/dev";
 
 function App() {
